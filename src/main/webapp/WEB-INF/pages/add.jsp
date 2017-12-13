@@ -10,12 +10,11 @@
 </head>
 <body>
 	<center>
-		<h1>学生添加</h1>
+		<h1>学生添加</h1> 
 		<%
 			pageContext.setAttribute("ctp", request.getContextPath());
 		%>
-		<form:form action="${ctp }/addStu" modelAttribute="student"
-			method="POST">
+		<form:form action="${ctp }/addStu" modelAttribute="student" method="POST">
 			<!-- path就是原来html-input的name项：需要写 
 		path：
 			1）、当做原生的name项

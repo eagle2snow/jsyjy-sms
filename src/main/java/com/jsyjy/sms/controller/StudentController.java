@@ -114,7 +114,9 @@ public class StudentController {
 	 */
 	@RequestMapping(value = "addStu", method = RequestMethod.POST)
 	public String addStu(Student student) {
-		this.studentService.save(student);
+		if (student!=null) {
+			this.studentService.save(student);
+		}
 		return "redirect:/students";
 	}
 
